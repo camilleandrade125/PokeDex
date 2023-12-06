@@ -3,8 +3,11 @@ const api = "http://localhost:3001/pessoas/"
 
 function aoclicar(){
 
+
+
     const pesquisaInput = document.getElementById("pesquisa-poke")
     const pokeImagem = document.getElementById("imagem-poke")
+    const pokeNome = document.getElementById("nome-poke")
 
     let valorAtualInput = pesquisaInput.value
     let pesquisaAtualPoke = api+valorAtualInput
@@ -13,7 +16,10 @@ function aoclicar(){
 
     }).then(function(pessoa){
         
-        pokeImagem.setAttribute("src", pessoa.imagem)
+    
+        
+        pokeNome.textContent = `Nome: ${pokemon.name}`;
+        pokeImagem.setAttribute("src", pokemon.sprites.front_default)
 
 
     }).catch(function(erro){
