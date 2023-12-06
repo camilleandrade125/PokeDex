@@ -1,8 +1,10 @@
 #pesquisa-poke{
-    width: 180px;
-    height: 15px;
+    width: 500px;
+    height: 45px;
     border-radius: 15px;
     border-color: goldenrod;
+    padding: 10px;
+    font-size: 1.2em;
 
 }
 
@@ -10,45 +12,68 @@
 
     display: flex;
     justify-content: center;
-    background-color: #C0C0C0;
     width: 100%;
-    height: 120vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:15px;
+    background-image: url("./src/pokeDex.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+ 
     
 
 }
 
 #botao-pesquisa{
-    
-    width: 150px;
-    height: 30px;
-    background-color: yellow;
+
+    position: absolute;
+    bottom: 19%;
+    right: 38%;
+    width: 131px;
+    height: 42px;
+    background-color: transparent;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: width 0.3s ease;
+    color: white;
+    font-weight: bold;
+    
 }
 
-#botao-pesquisa:hover {
-    width: 180px; 
-}
 
 
 
 #nome-poke{
+
+    position: absolute;
+    right: 34%;
+    top: 39.4%;
+    color: white;
+    font-weight: bold;
     display: flex;
     align-items: center;
     padding-left: left;
-    background-color: yellow;
     width: 200px;
     height: 50px;
     border-radius: 50px;
-  
+}
+
+#imagem-poke{
+
+   
+    position: absolute;
+    left: 630px;
+    top:35%;
+    display: none;
 
 }
 
 
+
+ 
