@@ -1,4 +1,4 @@
-const api = "https://pokeapi.co/api/v2/pokemon/"
+const api = "http://localhost:3001/pessoas/"
 
 
 function aoclicar(){
@@ -11,9 +11,9 @@ function aoclicar(){
     fetch(pesquisaAtualPoke).then(function(resultado){
         return resultado.json()
 
-    }).then(function(pokemon){
+    }).then(function(pessoa){
         
-        pokeImagem.setAttribute("src", pokemon.sprites.front_default)
+        pokeImagem.setAttribute("src", pessoa.imagem)
 
 
     }).catch(function(erro){
